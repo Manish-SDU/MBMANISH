@@ -238,12 +238,6 @@ a {
   color: #21ab9d;
 }
 
-p a:hover {
-  color: #177c72;
-  font-size: large;
-  font-weight: bolder;
-}
-
 /**
  ----------------------
  4. Header
@@ -595,10 +589,12 @@ footer {
   gap: 0.5rem;
   place-items: center;
   color: white;
-  padding: 10px 16px;
+  padding: 12px 20px;
   margin: 1rem;
-  border-radius: 2px;
-  transition: background-color 200ms ease-in-out;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .social-button::before {
@@ -617,10 +613,6 @@ footer {
   background-image: url(images/github-icon.svg);
 }
 
-.github-button:hover {
-  background: var(--github-gray-hover);
-}
-
 .discord-button {
   background: var(--discord-blue);
 }
@@ -629,20 +621,31 @@ footer {
   background-image: url(images/discord-icon.svg);
 }
 
-.discord-button:hover {
-  background: var(--discord-blue-hover);
-}
-
 .mail-button {
-  background: var(--light-green);
+  background: #21ab9d;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(33, 171, 157, 0.3);
 }
 
 .mail-button::before {
   background-image: url(images/mail-icon.svg);
 }
 
+/* Remove hover effect */
 .mail-button:hover {
-  background: var(--dark-green);
+  background: #21ab9d;
+}
+
+.demo-button {
+  background: #21ab9d;
+}
+
+.demo-button::before {
+  display: none;
+}
+
+.demo-button:hover {
+  background: #177c72;
 }
 
 .browse-all {
@@ -1900,6 +1903,43 @@ Highlights (whatever that is)
 .highlight .vi { color: #8be9fd } /* Name.Variable.Instance */
 .highlight .vm { color: #8be9fd } /* Name.Variable.Magic */
 .highlight .il { color: #bd93f9 } /* Literal.Number.Integer.Long */
+
+/**
+ ----------------------
+ Button Container Responsive Styles
+ ----------------------
+ */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: nowrap;
+}
+
+.button-container .social-button {
+  margin: 0;
+  flex: 1;
+  max-width: 180px;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .button-container .social-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 360px) {
+  .button-container .social-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    max-width: 120px;
+  }
+}
 
 
 

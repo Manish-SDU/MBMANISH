@@ -1,6 +1,89 @@
-<!DOCTYPE html><html lang="en">
-<!-- Mirrored from www.python-engineer.com/courses/tensorflowbeginner/03-neuralnet/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Sep 2022 12:02:06 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head><meta charset="UTF-8"/><meta name="og:site_name" content="Python Engineer"/><link rel="canonical" href="https://python-engineer.com/courses/tensorflowbeginner/03-neuralnet"/><meta name="twitter:url" content="https://python-engineer.com/courses/tensorflowbeginner/03-neuralnet"/><meta name="og:url" content="https://python-engineer.com/courses/tensorflowbeginner/03-neuralnet"/><title>Neural Net - TensorFlow Beginner 03 | Python Engineer</title><meta name="twitter:title" content="Neural Net - TensorFlow Beginner 03 | Python Engineer"/><meta name="og:title" content="Neural Net - TensorFlow Beginner 03 | Python Engineer"/><meta name="description" content="In this part we build our first deep neural network using the keras Sequential API."/><meta name="twitter:description" content="In this part we build our first deep neural network using the keras Sequential API."/><meta name="og:description" content="In this part we build our first deep neural network using the keras Sequential API."/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="../../../styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="../../../images/favicon.png" type="image/png"/><link rel="alternate" href="../../../feed.rss" type="application/rss+xml" title="Subscribe to Python Engineer"/><meta name="twitter:image" content="../../../images/icon.png"/><meta name="og:image" content="../../../images/icon.png"/><script async defer data-domain="python-engineer.com" src="../../../../plausible.io/js/plausible.js"></script></head><body class="item"><header><div class="header-promotion"><p><div class="wrapper"><p><a href="https://pythonengineer.pallet.com/" target="_blank">🐍 Find Python and ML Jobs! 🐍</a></p></div></p></div><div class="wrapper"><nav><ul><li><a href="../../../posts/index.html">POSTS</a></li><li class="selected"><a href="../../index.html">COURSES</a></li><li><a href="../../../about/index.html">ABOUT</a></li></ul></nav><a href="../../../index.html"><div class="hero-container"><img class="header-image-small" src="../../../images/pat_face_bg.webp" alt="Patrick Loeber"/><div class="hero-text-container justify-center"><p>Become a</p><h1 class="colorized-text ">Python Engineer</h1><p class="mobile-hide">Come and learn about</p><ul class="mobile-hide"><li><a class="variant-a" href="../../../tags/python/index.html">Python</a></li><li id="regular-li">and</li><li><a class="variant-b" href="../../../tags/machine-learning/index.html">Machine Learning</a></li></ul></div></div></a></div></header><article class="page wrapper post-page"><a class="back" href="../index.html">Back to course overview</a><h1 class="blog-header">Neural Net - TensorFlow Beginner 03</h1><div class="metadata"><ul class="tags"><li class="variant-f"><a href="../../../tags/tensorflow/index.html">TensorFlow</a></li><li class="variant-c"><a href="../../../tags/deep-learning/index.html">Deep Learning</a></li></ul><span class="post-date">30 Sep 2020, by </span><a class="author-link-post" href="../../../authors/patrick/index.html">Patrick Loeber</a></div><div class="video-player"><iframe frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" src="https://www.youtube-nocookie.com/embed/Edhv7-4t0lc"></iframe></div><div class="content page-content m-top"><p>In this part we build our first deep neural network using the keras Sequential API. We learn how to build a model, how to train and evaluate the model, and how to make predictions with the model.</p><p>All code and slides from this course can be found on <a href="https://github.com/python-engineer/tensorflow-course">GitHub</a>.</p><h4>Links:</h4><ul><li><a href="https://www.tensorflow.org/">https://www.tensorflow.org</a></li></ul></div><ul class="actions"><li><a class="youtube-button" href="https://www.youtube.com/channel/UCbXgNpp0jedKWcQiULLbDTA?sub_confirmation=1" target="_blank" rel="nofollow">Subscribe</a></li><li><a class="twitter-button" href="https://twitter.com/intent/tweet?via=python_engineer&amp;text=Neural%20Net%20-%20TensorFlow%20Beginner%2003&amp;url=https://python-engineer.com/courses/tensorflowbeginner/03-neuralnet" rel="nofollow" target="_blank">Share</a></li></ul><div class="affiliate-container"><div><h2>FREE VS Code / PyCharm Extensions I Use</h2><p>✅ Write cleaner code with Sourcery, instant refactoring suggestions: <a href="https://sourcery.ai/?utm_source=youtube&amp;utm_campaign=pythonengineer" target="_blank">Link *</a></p><p class="affiliate-note">* This is an affiliate link. By clicking on it you will not have any additional costs, instead you will support me and my project. Thank you! 🙏</p></div></div><a class="sponsor-container" href="../../../newsletter/index.html" rel="nofollow"><img class="main" src="../../../images/numpyhandbook.webp" alt="newsletter"/><div><h2>FREE NumPy Handbook</h2><p>Learn NumPy with this eBook! It covers code examples for all essential functions. Get it for free together with monthly Python tips and news.</p><button class="pill-button">I Want This</button></div></a><div><div><a class="section-header pad-top" href="../../index.html"><h2>Check out my Courses</h2></a><ul class="item-list grid"><li><article class="post-card"><a href="../index.html"><img class="post-thumb" alt="Thumbnail image of the post." src="../../../images/titles/tfcourse.webp"/></a><ul class="tags"><li class="variant-a"><a href="../../../tags/python/index.html">Python</a></li><li class="variant-f"><a href="../../../tags/tensorflow/index.html">TensorFlow</a></li><li class="variant-c"><a href="../../../tags/deep-learning/index.html">Deep Learning</a></li></ul><a class="post-link" href="../index.html"><h1 class="description">TensorFlow 2 Beginner</h1><p>Learn all the necessary basics to get started with TensorFlow 2 and Keras.</p></a></article></li><li><article class="post-card"><a href="../../pytorchbeginner/index.html"><img class="post-thumb" alt="Thumbnail image of the post." src="../../../images/titles/pytorchcourse.webp"/></a><ul class="tags"><li class="variant-a"><a href="../../../tags/python/index.html">Python</a></li><li class="variant-c"><a href="../../../tags/pytorch/index.html">PyTorch</a></li><li class="variant-c"><a href="../../../tags/deep-learning/index.html">Deep Learning</a></li></ul><a class="post-link" href="../../pytorchbeginner/index.html"><h1 class="description">PyTorch Beginner</h1><p>Learn all the necessary basics to get started with this deep learning framework.</p></a></article></li><li><article class="post-card"><a href="../../mlfromscratch/index.html"><img class="post-thumb" alt="Thumbnail image of the post." src="../../../images/titles/mlfromscratch.webp"/></a><ul class="tags"><li class="variant-a"><a href="../../../tags/python/index.html">Python</a></li><li class="variant-b"><a href="../../../tags/machine-learning/index.html">Machine Learning</a></li><li class="variant-d"><a href="../../../tags/numpy/index.html">numpy</a></li></ul><a class="post-link" href="../../mlfromscratch/index.html"><h1 class="description">ML From Scratch</h1><p>Implement popular Machine Learning algorithms from scratch using only built-in Python modules and numpy.</p></a></article></li><li><article class="post-card"><a href="../../advancedpython/index.html"><img class="post-thumb" alt="Thumbnail image of the post." src="../../../images/titles/advancedpythoncourse.webp"/></a><ul class="tags"><li class="variant-a"><a href="../../../tags/python/index.html">Python</a></li></ul><a class="post-link" href="../../advancedpython/index.html"><h1 class="description">Advanced Python</h1><p>Advanced Python Tutorials. It covers topics like collections, decorators, generators, multithreading, logging, and much more.</p></a></article></li></ul></div></div></article><footer><div class="wrapper patreon-footer"><h1>Patreon</h1><p>Become a Patron and get exclusive content! Get access to ML From Scratch notebooks, join a private Discord channel, get priority response, and more!</p><div class="gold-patrons"><h3>Special thanks to my Gold Patreons:</h3><p>Tonja J R</p><p>Daniel And Andy</p><p>Sergei</p></div><p>And of course thanks to every other member! I really appreciate the support!</p><a href="https://www.patreon.com/patrickloeber" target="_blank">Find Out More</a></div><div class="wrapper"><p>Copyright © Python Engineer 2022.</p><p>Generated using <a href="https://github.com/johnsundell/publish" target="_blank">Publish</a>.</p><ul class="footer-links"><li><a class="youtube-button youtube-icon" href="https://www.youtube.com/channel/UCbXgNpp0jedKWcQiULLbDTA" target="_blank">YouTube</a></li><li><a class="social-button twitter-button" href="https://twitter.com/python_engineer" target="_blank">Twitter</a></li><li><a class="social-button github-button" href="https://github.com/python-engineer" target="_blank">GitHub</a></li><li><a class="social-button discord-button" href="https://discord.gg/FHMg9tKFSN" target="_blank">Discord</a></li><li><a class="footer-button" href="../../../feed.rss">RSS</a></li><li><a class="footer-button" href="../../../about/index.html">Contact</a></li><li><a class="footer-button" href="../../../legal-notice/index.html">Legal Notice</a></li><li><a class="footer-button" href="../../../privacy-policy/index.html">Privacy Policy</a></li></ul></div></footer></body>
-<!-- Mirrored from www.python-engineer.com/courses/tensorflowbeginner/03-neuralnet/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Sep 2022 12:02:06 GMT -->
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="og:site_name" content="MB Manish" />
+    <link rel="canonical" href="index.html"/>
+    <title>Programming | NoteUp</title>
+    <meta name="description" content="Manish Raj Moriche | Programming"/>
+    <link rel="stylesheet" href="../../../styles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../../images/favicon.png" type="image/png" />
+</head>
+
+<body class="item">
+	<header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="../../../about/index.html">ABOUT</a></li>
+                    <li class="selected"><a href="../../../projects/index.html">PROJECTS</a></li>
+                    <li><a href="../../../posts/index.html">RESUME</a></li>
+                </ul>
+            </nav>
+            <a href="../../../index.html">
+                <div class="hero-container"><img class="header-image-small" src="../../../images/avatar.jpg" alt="Avatar" />
+                    <div class="hero-text-container justify-center">
+                        <div class="name"><p>Manish Raj Moriche</p></div>
+                        <hr>
+                        <!-- Banner <h1 class="colorized-text">Student</h1> -->
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header>
+	<article class="page wrapper post-page"><a class="back" href="../index.html">Back to overview</a>
+		<h1 class="blog-header">NoteUp</h1>
+		<div class="metadata">
+			<ul class="tags">
+                <li class="variant-a"><a href="../../../tags/python/index.html">Python</a></li>
+                <li class="variant-f"><a href="../../../tags/javascript/index.html">Javascript</a></li>
+			</ul><span class="post-date">21 Aug 2024</span></div>
+            
+            <p><strong>👀 Take a quick look at the app and its key features in action!</strong></p>
+            <hr>
+            <div class="video-player">
+                <iframe 
+                    frameborder="0" 
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen="true" 
+                    src="https://www.youtube-nocookie.com/embed/Edhv7-4t0lc">
+                </iframe>
+            </div>
+
+		<div class="content page-content m-top">
+			<p>I present <strong>NoteUp</strong>, a lightweight web app designed to securely store account information locally on your computer in a user-friendly interface.</p>
+            
+            <p>Originally a simple console-based tool I created to store trivial login data, NoteUp evolved from a basic terminal app into a visual, browser-based experience. I built it to explore web development more deeply, combining my growing knowledge of HTML, CSS, Python, and JavaScript.</p>
+            
+            <p>The app allows you to log in securely and manage your saved credentials, all stored locally (when downloaded) to ensure your data stays private. It also supports Google login, random profile pictures, and password recovery using security questions.</p>
+            
+            <p>You can try the app on a temporary Render-hosted demo (note: it may take a moment to load). Be advised: this is a concept app, and data entered online will reset every 4–5 days. For full security, it's best to download and run it locally.</p>
+            
+            <div style="text-align: center; background: linear-gradient(135deg, #fafffe 0%, #f8fffe 100%); padding: 0.5rem 3rem; border-radius: 16px; margin: 4rem 0; border: 2px solid #177c72; box-shadow: 0 4px 12px rgba(23, 124, 114, 0.1);">
+                <h3 style="color: #177c72; margin: 0 0 0.3rem 0; font-size: 1.3rem; font-weight: 600; letter-spacing: -0.02em;">🚀 Try NoteUp Now</h3>
+                <p style="margin: 0 0 0.8rem 0; color: #475569; font-size: 0.95rem; line-height: 1.4;">Experience the app in action or explore the source code</p>
+                <div class="button-container">
+                    <a class="social-button demo-button" href="#" target="_blank">🔗 Live Demo</a>
+                    <a class="social-button github-button" href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            
+            <p><em>For detailed technical specifications and setup instructions, please check the project's GitHub README.</em></p>
+            
+            <p>🤗 Thanks for checking it out!</p>
+		</div>
+		
+		<footer>
+            <!-- Copyright -->
+            <div class="wrapper">
+                <p id="copyright">Copyright © MB Manish <span id="year"></span>.</p>
+            </div>
+            <br>
+        </footer>
+        <!-- Link to script.js file -->
+        <script src="../../../script.js"></script>
+</body>
 </html>
